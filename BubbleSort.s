@@ -23,23 +23,23 @@
 #===========================================================================
 
 	.data
-programa:	.asciiz "\n-------- Ordenador de Numeros --------\n\n"
-ordenado:	.asciiz "\n-------- Numeros Ordenados --------\n"
-mensagem:	.asciiz "Informe um numero inteiro: \n"	
-blank:		.asciiz " "	
-vetor: 		.word 10	        	
+programa:		.asciiz "\n-------- Ordenador de Numeros --------\n\n"
+ordenado:		.asciiz "\n-------- Numeros Ordenados --------\n"
+mensagem:		.asciiz "Informe um numero inteiro: \n"	
+blank:			.asciiz " "	
+vetor: 			.word 10	        	
 	.text                     
 main: 
 #Imprimi a mensagem de Inicializacao na tela -------------------------------
 	li		$v0, 4					
 	la		$a0, programa		#Imprimi "Ordenador de Numeros" na tela
-	syscall						#Chamada do Sistema 
+	syscall					#Chamada do Sistema 
 #---------------------------------------------------------------------------
 	
 #Loop para ler os valores digitados e salvar no vetor ----------------------
 	addi		$t0, $0, 0		#i = 0
 	addi		$t3, $0, 4		#t3 = 4
-forler:						#Inicio do FOR
+forler:						
 	slti		$t2, $t0, 10		#? (i < 4)
 	beq		$t2, $0, fimforler	#Se for falso pula para fimforler
 	
