@@ -27,7 +27,7 @@ programa:		.asciiz "\n-------- Ordenador de Numeros --------\n\n"
 ordenado:		.asciiz "\n-------- Numeros Ordenados --------\n"
 mensagem:		.asciiz "Informe um numero inteiro: \n"	
 blank:			.asciiz " "	
-vetor: 			.word 10	        	
+vetor:			.word 10	        	
 	.text                     
 main: 
 #Imprimi a mensagem de Inicializacao na tela -------------------------------
