@@ -1,6 +1,4 @@
-# BubbleSort Assembly MIPS
-Algorítmo BubbleSort em Assembly MIPS.
+# SelectionSort in Assembly MIPS
+SelectionSort algorithm in Assembly MIPS.
 
-YouTube: https://youtu.be/IV--SqZzxCQ
-
-**Desenvolvido por Guilherme Augusto Leite Santos em 2018**
+**Developed by Guilherme Augusto Leite Santos in 2018**
